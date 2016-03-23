@@ -27,7 +27,6 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <!-- JQuery Mobile -->
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -36,19 +35,14 @@
     <body>
         <!-- Content -->
         <div data-role="page">
-            <div data-role="header"></div>
+            <div data-role="header" data-position="fixed">Header</div>
             <div data-role="main" class="ui-content">
                 <form>
-                    <label for="flip_gebruiker">Toon gebruiker bij TODO: </label>
-                    <input type="checkbox" data-role="flip-switch" name="flip_gebruiker" id="flip-gebruiker">
-
-                    <label for="flip_tijd">Toon tijd bij TODO: </label>
-                    <input type="checkbox" data-role="flip-switch" name="flip_tijd" id="flip-flip_tijd">
+                    <label for="flip-checkbox-1">Flip toggle switch checkbox:</label>
+                    <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
                 </form>
-
-
             </div>
-            <div data-role="footer"></div>
+            <div data-role="footer" data-position="fixed">Footer</div>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>

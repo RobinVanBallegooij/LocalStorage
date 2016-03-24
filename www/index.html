@@ -30,23 +30,30 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <title>Hello World</title>
+        <title>Local storage</title>
     </head>
     <body>
         <!-- Content -->
         <div data-role="page" id="settingspage">
-            <div data-role="header" data-position="fixed">Header</div>
+            <div data-role="header" data-position="fixed" data-theme="b">
+                <h1>Settings</h1>
+            </div>
             <div data-role="main" class="ui-content">
                 <form>
-                    <label for="flip-checkbox-1">Flip toggle switch checkbox:</label>
-                    <input type="checkbox" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+                    <label for="flip_user">Toon gebruiker bij TODO: </label>
+                    <input type="checkbox" data-role="flipswitch" name="flip_user" id="flip_user">
+
+                    <label for="flip_time">Toon tijd bij TODO: </label>
+                    <input type="checkbox" data-role="flipswitch" name="flip_time" id="flip_time">
+
+                    <button class="ui-btn" id="save_settings">Opslaan</button>
                 </form>
             </div>
-            <div data-role="footer" data-position="fixed">Footer</div>
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/datahandler.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
